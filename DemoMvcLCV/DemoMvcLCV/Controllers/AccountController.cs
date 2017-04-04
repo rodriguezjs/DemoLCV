@@ -8,10 +8,10 @@ using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
-using DemoMvcLCV.Filters;
-using DemoMvcLCV.Models;
+using MvcLCV.Filters;
+using MvcLCV.Models;
 
-namespace DemoMvcLCV.Controllers
+namespace MvcLCV.Controllers
 {
     [Authorize]
     [InitializeSimpleMembership]
