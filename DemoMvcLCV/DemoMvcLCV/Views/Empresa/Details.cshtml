@@ -1,0 +1,78 @@
+﻿@model DemoDatosLCV.Empresa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Empresa</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Razon_Social)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Razon_Social)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Representante)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Representante)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Direccion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Direccion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Rubro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Rubro)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FechaReg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FechaReg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsuarioReg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsuarioReg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FechaMod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FechaMod)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsuarioMod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsuarioMod)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
