@@ -1,0 +1,169 @@
+﻿@model DemoDatosLCV.Compras
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Compras</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Id_Compras)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id_Compras)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Tipo_Factura)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tipo_Factura)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Razon_Social)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Razon_Social)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nro_Factura)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nro_Factura)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nro_Poliza)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nro_Poliza)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nro_Autorizacion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nro_Autorizacion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Fecha)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Fecha)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Importe)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Importe)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Importe_ICE)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Importe_ICE)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Importe_Exento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Importe_Exento)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Importe_NoSujeto_CF)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Importe_NoSujeto_CF)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Importe_Sujeto_CF)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Importe_Sujeto_CF)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Credito_Fiscal)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Credito_Fiscal)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cod_Control)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cod_Control)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Periodo.UsuarioReg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Periodo.UsuarioReg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Id_Gestion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id_Gestion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FechaReg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FechaReg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsuarioReg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsuarioReg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FechaMod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FechaMod)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsuarioMod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsuarioMod)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Id_Empresa)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id_Empresa)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id=Model.Id_Compras }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,147 @@
+﻿@model IEnumerable<DemoDatosLCV.Ventas>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_Ventas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Razon_Social)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nro_Fact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nro_Autorizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Importe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Importe_ICE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Importe_Excento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Importe_Sujeto_CF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Debito_Fiscal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cod_Control)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Periodo.UsuarioReg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_Gestion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaReg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsuarioReg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaMod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsuarioMod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_Empresa)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_Ventas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Razon_Social)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nro_Fact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nro_Autorizacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Importe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Importe_ICE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Importe_Excento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Importe_Sujeto_CF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Debito_Fiscal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cod_Control)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Periodo.UsuarioReg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_Gestion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaReg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsuarioReg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaMod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsuarioMod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_Empresa)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id_Ventas }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id_Ventas }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id_Ventas })
+        </td>
+    </tr>
+}
+
+</table>

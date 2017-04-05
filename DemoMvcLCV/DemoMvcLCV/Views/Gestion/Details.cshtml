@@ -1,4 +1,4 @@
-﻿@model DemoDatosLCV.Empresa
+﻿@model DemoDatosLCV.Gestion
 
 @{
     ViewBag.Title = "Details";
@@ -7,48 +7,34 @@
 <h2>Details</h2>
 
 <fieldset>
-    <legend>Empresa</legend>
+    <legend>Gestion</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Nit)
+         @Html.DisplayNameFor(model => model.Inicio)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Nit)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Razon_Social)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Razon_Social)
+        @Html.DisplayFor(model => model.Inicio)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Representante)
+         @Html.DisplayNameFor(model => model.Fin)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Representante)
+        @Html.DisplayFor(model => model.Fin)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Direccion)
+         @Html.DisplayNameFor(model => model.Estado)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Direccion)
+        @Html.DisplayFor(model => model.Estado)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Rubro)
+         @Html.DisplayNameFor(model => model.CGestion)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Rubro)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.FechaReg)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.FechaReg)
+        @Html.DisplayFor(model => model.CGestion)
     </div>
 
     <div class="display-label">
@@ -59,10 +45,10 @@
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.FechaMod)
+         @Html.DisplayNameFor(model => model.FechaReg)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.FechaMod)
+        @Html.DisplayFor(model => model.FechaReg)
     </div>
 
     <div class="display-label">
@@ -71,8 +57,22 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.UsuarioMod)
     </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FechaMod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FechaMod)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Empresa.Razon_Social)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Empresa.Razon_Social)
+    </div>
 </fieldset>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id=Model.Nit  }) |
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

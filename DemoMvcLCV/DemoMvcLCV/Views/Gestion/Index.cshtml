@@ -1,0 +1,81 @@
+﻿@model IEnumerable<DemoDatosLCV.Gestion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Inicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CGestion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsuarioReg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaReg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsuarioMod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaMod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empresa.Razon_Social)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CGestion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsuarioReg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaReg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsuarioMod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaMod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empresa.Razon_Social)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

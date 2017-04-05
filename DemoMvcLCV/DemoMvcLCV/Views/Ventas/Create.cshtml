@@ -1,0 +1,188 @@
+﻿@model DemoDatosLCV.Ventas
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Ventas</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Id_Ventas)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Id_Ventas)
+            @Html.ValidationMessageFor(model => model.Id_Ventas)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nit)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nit)
+            @Html.ValidationMessageFor(model => model.Nit)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Razon_Social)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Razon_Social)
+            @Html.ValidationMessageFor(model => model.Razon_Social)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nro_Fact)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nro_Fact)
+            @Html.ValidationMessageFor(model => model.Nro_Fact)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nro_Autorizacion)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nro_Autorizacion)
+            @Html.ValidationMessageFor(model => model.Nro_Autorizacion)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Fecha)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Fecha)
+            @Html.ValidationMessageFor(model => model.Fecha)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Importe)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Importe)
+            @Html.ValidationMessageFor(model => model.Importe)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Importe_ICE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Importe_ICE)
+            @Html.ValidationMessageFor(model => model.Importe_ICE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Importe_Excento)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Importe_Excento)
+            @Html.ValidationMessageFor(model => model.Importe_Excento)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Importe_Sujeto_CF)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Importe_Sujeto_CF)
+            @Html.ValidationMessageFor(model => model.Importe_Sujeto_CF)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Debito_Fiscal)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Debito_Fiscal)
+            @Html.ValidationMessageFor(model => model.Debito_Fiscal)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Estado)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Estado)
+            @Html.ValidationMessageFor(model => model.Estado)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cod_Control)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cod_Control)
+            @Html.ValidationMessageFor(model => model.Cod_Control)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Id_Periodo, "Periodo")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("Id_Periodo", String.Empty)
+            @Html.ValidationMessageFor(model => model.Id_Periodo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Id_Gestion)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Id_Gestion)
+            @Html.ValidationMessageFor(model => model.Id_Gestion)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FechaReg)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FechaReg)
+            @Html.ValidationMessageFor(model => model.FechaReg)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UsuarioReg)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UsuarioReg)
+            @Html.ValidationMessageFor(model => model.UsuarioReg)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FechaMod)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FechaMod)
+            @Html.ValidationMessageFor(model => model.FechaMod)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UsuarioMod)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UsuarioMod)
+            @Html.ValidationMessageFor(model => model.UsuarioMod)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Id_Empresa)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Id_Empresa)
+            @Html.ValidationMessageFor(model => model.Id_Empresa)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
